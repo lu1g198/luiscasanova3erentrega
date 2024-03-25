@@ -1,0 +1,56 @@
+@import 'base/generales';
+@import 'base/variables';
+
+@import 'utilities/maps';
+@import 'utilities/extends';
+@import 'utilities/mediaqueries';
+
+@import 'components/item';
+@import 'components/footer';
+
+@import 'pages/index';
+@import 'pages/productos';
+@import 'pages/contacto';
+@import 'pages/sobremi';
+@import 'pages/terapiaperson';
+
+@media only screen and (min-width:1000px) {
+    
+    .cajita a{
+        font-size: 18px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+
+
+    main .inicio{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        height: 515px;
+    }
+
+    main .left{
+        width: 80%;
+        padding-left: 30px;
+    }
+
+    main .left h2, main .left h3, main .left p{
+        text-align: left;
+    }
+
+    main .inicio .left .call .cajita{
+        width: 60%;
+        height: 40%;
+        margin-left: 1%;
+    }
+
+    main .right img{
+        margin-right: 40px;
+        width: 500px;
+    }
+}

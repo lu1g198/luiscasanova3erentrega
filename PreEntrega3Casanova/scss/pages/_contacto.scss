@@ -1,0 +1,43 @@
+main{
+    background-color: #fdb93a;
+    padding: 20px;
+    .inicio{
+        @include mediano{
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            height: 515px;
+        }
+        section{
+            .left{
+                @include mediano{
+                    width: 80%;
+                    padding-left: 30px;
+                }
+                h1{
+                    text-align: center;
+                    color: map-get($colores,color-textoh1)
+                }
+                .right{
+                    img{
+                        margin-top: 20px;
+                        width: 400px;
+                        height: auto;
+                        background-size: cover;
+                        background-position: center;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        @include mediano{
+                            margin-right: 40px;
+                            width: 500px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    
+
+}

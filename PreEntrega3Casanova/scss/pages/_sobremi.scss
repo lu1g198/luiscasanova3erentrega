@@ -1,0 +1,64 @@
+main{
+    background-color: #fdb93a;
+    padding: 20px;
+    .inicio{
+        @include mediano{
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            height: 515px;
+        }
+        .left{
+            @include mediano{
+                width: 80%;
+                padding-left: 30px;
+            }
+            h2{
+                font-size: 40px;
+                text-align: center;
+                @include mediano{
+                    text-align: left;
+                }
+            }
+            h3{
+                font-size: 20px;
+                text-align: center;
+                @include mediano{
+                    text-align: left;
+                }
+            }
+            p{
+                text-align: center;
+                @include mediano{
+                    text-align: left;
+                }
+            }
+        }
+        .right{
+            img{
+                margin-top: 20px;
+                width: 400px;
+                height: auto;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                @include mediano{
+                    margin-right: 40px;
+                    width: 500px;
+                }
+            }
+        }        
+    }
+}
+
+.sectioncatalogo{
+    background-color: rgb(197, 128, 0);
+	text-align: center;
+	align-content: center;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}

@@ -1,0 +1,106 @@
+main{
+    background-color: #fdb93a;
+    padding: 20px;
+    .inicio{
+        @include mediano{
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            height: 515px;
+        }
+        .left{
+            @include mediano{
+                width: 80%;
+                padding-left: 30px;
+            }
+            h2{
+                font-size: 40px;
+                text-align: center;
+                @include mediano{
+                    text-align: left;
+                }
+            }
+            h3{
+                font-size: 20px;
+                text-align: center;
+                @include mediano{
+                    text-align: left;
+                }
+            }
+            p{
+                text-align: center;
+                @include mediano{
+                    text-align: left;
+                }
+            }
+            .call{
+                .cajita{
+                    text-align: center;
+                    background-color: yellow;
+	                width: 30%;
+	                height: 40%;
+	                margin-top: 20px;
+	                margin-left: 35%;
+	                border-radius: 10px;
+	                box-shadow: 0 0 5px #805300;
+	                padding: 10px;
+	                transition: 0.5s;
+                    @include mediano{
+                        width: 60%;
+                        height: 40%;
+                        margin-left: 1%;
+                    }
+                    &:hover{
+                        transform: scale(0.9);
+                        background-color: orange;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-weight: bold;
+                        font-size: 12px;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+                .cajita{
+                    text-align: center;
+                    &:hover{
+                        transform: scale(0.9);
+                        background-color: orange;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-weight: bold;
+                        font-size: 12px;  
+                        @include pequeño{
+                            font-size: 15px;
+                        }
+                        @include mediano{
+                            font-size: 18px;
+                        }                      
+                    }
+                }
+            }
+        }
+        .right{
+            img{
+                margin-top: 20px;
+                width: 400px;
+                height: auto;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                @include mediano{
+                    margin-right: 40px;
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+}
